@@ -1,0 +1,53 @@
+{% load static %}
+{% block content %}
+
+{% include 'header.html' %}
+
+<!-- Start Contact Form -->
+    <!-- <div class=" py-5 row d-flex align-items-center banner-content col-lg-8 col-8 offset-2 m-lg-auto text-left py-5 pb-5"> -->
+        <hr><h3 div align="center" class="logo" style="font: size 50px;" href="#">B HIRED</a>
+            <hr><h3 div style="font-size: 40px;">
+            <div align="center">
+        ACHIEVEMENTS
+        </h3> </div></div>
+    </div>
+</div>
+    <br><br>
+    <div align="center">    
+<div class="col-lg-8 ">
+    <form class="contact-form row" method="POST" action="achieve" enctype="" >
+        {% csrf_token %}
+        <br><br><br>
+
+        <div class="form-floating">
+            <input type="text" class="form-control form-control-lg light-300" id="floatingemail" name="uachievement1" placeholder="1">
+            <label for="floatingemail light-300"></label>
+        </div>
+        <br><br><br>
+        
+        <div class="form-floating">
+            <input type="text" class="form-control form-control-lg light-300" id="floatingname" name="uachievement2" placeholder="2">
+            <label for="floatingname light-300"></label>
+        </div>
+            <br><br><br>
+    
+        <div class="form-floating">
+            <input type="text" class="form-control form-control-lg light-300" id="floatingname" name="uachievement3" placeholder="3">
+            <label for="floatingname light-300"></label>
+        </div>
+        <br><br>
+    
+        <br><br><br>
+        <div class="col-md-12 col-12 m-auto text-end">
+        <button type="submit" class="btn btn-primary rounded-pill px-md-5 px-4 py-2 radius-0 text-light light-300">ADD</button>
+        </div>
+        </div>
+
+    </form>
+</div>
+</div>
+<br><br><br>
+<br><br><br>
+<!-- End Contact Form -->
+{% include 'footer.html' %}
+{% endblock %}

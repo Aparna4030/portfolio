@@ -1,0 +1,57 @@
+{% load static %}
+{% block content %}
+
+{% include 'header.html' %}
+
+<!-- Start Contact Form -->
+    <!-- <div class=" py-5 row d-flex align-items-center banner-content col-lg-8 col-8 offset-2 m-lg-auto text-left py-5 pb-5"> -->
+        <hr><h3 div align="center" class="logo" style="font: size 50px;" href="#">B HIRED</a>
+            <hr><h3 div style="font-size: 40px;">
+            <div align="center">
+        PROFESSIONAL SKILLS
+        </h3> </div></div>
+    </div>
+</div>
+    <br><br>
+    <div align="center">    
+<div class="col-lg-8 ">
+    <form class="contact-form row" method="POST" action="ski" enctype="" >
+        {% csrf_token %}
+        <br><br>
+           <div class="col-lg-12 mb-4">
+            <div class="form-floating">
+                <input type="text" class="form-control form-control-lg light-300" id="floatingname" name="uskill1" placeholder="SKILL 1">
+                <label for="floatingname light-300"></label>
+            </div>
+            <br><br>
+        <!-- End Input Postgraduate -->
+        <div class="form-floating">
+            <input type="text" class="form-control form-control-lg light-300" id="floatingemail" name="uskill2" placeholder="SKILL 2">
+            <label for="floatingemail light-300"></label>
+        </div>
+        <br><br>
+        <!-- End Input Undergraduate -->
+        <div class="form-floating">
+            <input type="text" class="form-control form-control-lg light-300" id="floatingname" name="uskill3" placeholder="SKILL 3">
+            <label for="floatingname light-300"></label>
+        </div>
+            <br><br>
+        <!-- End Input Highersecondary-->
+        <div class="form-floating">
+            <input type="text" class="form-control form-control-lg light-300" id="floatingname" name="uskill4" placeholder="SKILL 4">
+            <label for="floatingname light-300"></label>
+        </div>
+        <br><br>
+        <!-- End Input Highschool-->
+        
+        <div class="col-md-12 col-12 m-auto text-end">
+        <button type="submit" class="btn btn-primary rounded-pill px-md-5 px-4 py-2 radius-0 text-light light-300">ADD</button>
+        </div>
+        </div>
+
+    </form>
+</div>
+</div>
+<!-- End Contact Form -->
+{% include 'footer.html' %}
+{% endblock %}

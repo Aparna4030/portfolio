@@ -1,0 +1,77 @@
+{% load static %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Meyawo landing page.">
+    <meta name="author" content="Devcrud">
+    <title>B HIRED Landing page | Free Bootstrap 4.3.x landing page</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="{% static 'vendors/themify-icons/css/themify-icons.css' %}">
+    <!-- Bootstrap + Meyawo main styles -->
+	<link rel="stylesheet" href="{% static 'css/meyawo.css' %}">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- Page Navbar -->
+<nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+    <div class="container">
+        
+        <a class="logo" style="font: size 50px;" href="">B HIRED</a>         
+        <ul class="nav">
+        {% if request.session.admin %}
+            <li class="item">
+                <a class="link" href="adminlogin">Home</a>
+            </li>
+           <li class="item">
+                <a class="link" href="logout">logout</a>
+            </li>   
+        {% elif request.session.uid %}
+            <li class="item">
+                <a class="link" href="userlogin">Home</a>
+            </li>
+            <li class="item">
+                <a class="link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="item">
+                <a class="link" href="#testmonial">Testmonial</a>
+            </li>
+            <li class="item">
+                <a class="link" href="#contact">Contact</a>
+            </li> 
+            <li class="item">
+                <a class="link" href="pview">View my Resume</a>
+            </li>
+            <li class="item">
+                <a class="link" href="logout">logout</a>
+            </li> 
+        {% else %}
+            <li class="item">
+                <a class="link" href="indexx">Home</a>
+            </li>
+            <li class="item">
+                <a class="link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="item">
+                <a class="link" href="#contact">Contact</a>
+            </li>
+            <li class="item">
+                <a class="link" href="#testmonial">Testmonial</a>
+            </li>
+            <li class="item ml-md-3">
+                <a href="portforeg" class="btn btn-primary">SIGN UP</a>
+            </li>      
+        {% endif %}
+            </ul>
+        <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+            <div class="hamburger-box">
+              <div class="hamburger-inner"></div>
+            </div>
+        </a>
+    </div>          
+</nav><!-- End of Page Navbar -->
+    
+{% endblock %}

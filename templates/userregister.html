@@ -1,0 +1,35 @@
+{% load static %}
+{% block content %}
+
+{% include 'header.html' %}
+<div align="center" class="container">
+    <table class="table">
+        <thead>
+          <tr>
+            <th >Id</th>
+            <th >Name</th>
+            <th >Email</th>
+            <th >password</th>
+            <th >about</th>
+          </tr>
+        </thead>
+        
+        <tbody>
+        {% for i in result %}
+          <tr>
+            <td>{{i.id}}</td>
+            <td>{{i.uname}}</td>
+            <td>{{i.uemail}}</td>
+            <td>{{i.upassword}}</td>
+            <td>{{i.uabout}}</td>
+            
+          </tr>
+          {% endfor %}
+        </tbody>
+    </table>
+    
+</div>
+
+{% include 'footer.html' %}
+
+    {% endblock %}

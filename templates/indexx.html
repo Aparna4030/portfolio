@@ -1,0 +1,220 @@
+{% load static %}
+{% block content %}
+{% include 'header.html' %}
+<!-- page header -->
+<header id="home" class="header">
+    <div class="overlay"></div>
+    <div class="header-content container">
+        <h1 class="header-title">
+            <span class="up">HI!</span>
+            <span class="down">READY to GET hired?</span>
+        </h1>
+        <p class="header-subtitle">Fast easy way to build a better resume..</p>            
+
+        <a href="portfologg"><button class="btn btn-primary">LOGIN</button></a>
+    </div>              
+</header><!-- end of page header -->
+
+<!-- portfolio section -->
+<section class="section" id="portfolio">
+    <div class="container text-center">
+        <p class="section-subtitle">RESUME TEMPLATE FOR EVERY CAREERE PATH.</p>
+        <h6 class="section-title mb-6">Discover more resume template</h6>
+        <!-- row -->
+        <div class="row">
+            <div class="col-md-4">
+                <a href="#" class="portfolio-card">
+                    <img src="{% static 'imgs/folio-1.jpg' %}" class="portfolio-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">    
+                    <span class="portfolio-card-overlay">
+                        <span class="portfolio-card-caption">
+                            <h4>Web Designing</h5>
+                            <p class="font-weight-normal">Category: Web Templates</p>
+                        </span>                         
+                    </span>                     
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="#" class="portfolio-card">
+                    <img class="portfolio-card-img" src="{% static 'imgs/folio-2.jpg' %}" class="img-responsive rounded" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    <span class="portfolio-card-overlay">
+                        <span class="portfolio-card-caption">
+                            <h4>Web Designing</h5>
+                            <p class="font-weight-normal">Category: Web Templates</p>
+                        </span>                         
+                    </span>                         
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="#" class="portfolio-card">
+                    <img class="portfolio-card-img" src="{% static 'imgs/folio-3.jpg' %}" class="img-responsive rounded" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">    
+                    <span class="portfolio-card-overlay">
+                        <span class="portfolio-card-caption">
+                            <h4>Web Designing</h5>
+                            <p class="font-weight-normal">Category: Web Templates</p>
+                        </span>                         
+                    </span>                     
+                </a>
+            </div>
+        </div><!-- end of row -->
+    </div><!-- end of container -->
+</section> <!-- end of portfolio section -->
+
+<!-- section -->
+<section class="section-sm bg-primary">
+    <!-- container -->
+    <div class="container text-center text-sm-left">
+        <!-- row -->
+        <div class="row align-items-center">
+            <div class="col-sm offset-md-1 mb-4 mb-md-0">
+                <h6 class="title text-light">Already have a resume?</h6>
+                <p class="m-0 text-light">You can upload your existing resume into our builder to give it a professional design or freshen the content with our expert-written phrases</p>
+            </div>
+            <div class="col-sm offset-sm-2 offset-md-3">
+                <button class="btn btn-lg my-font btn-light rounded">Update My Resume</button>
+            </div>
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</section> <!-- end of section -->
+
+<!-- testimonial section -->
+<section class="section" id="testmonial">
+    <div class="container text-center">
+        <p class="section-subtitle">Our users are being hired at the world's leading companies.</p>
+        <h6 class="section-title mb-6">Testmonial</h6>
+
+        <!-- row -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="testimonial-card">
+                    <div class="testimonial-card-img-holder">
+                        <img src="{% static 'imgs/avatar2.jpg' %}" class="testimonial-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">                           
+                    </div>
+                    <div class="testimonial-card-body">
+                        <p class="testimonial-card-subtitle">Absolutely love B HIRED! The layouts are phenomenal and enhancement hints that the tool provides you with is like having your own personal resume consultant! So much better than spending hours creating my own design files.Seems like a company that really wants to provide you with value instead of just take your money.</p>
+                        <h6 class="testimonial-card-title">Jhon cler</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="testimonial-card">
+                    <div class="testimonial-card-img-holder">
+                        <img src="{% static 'imgs/avatar3.jpg' %}" class="testimonial-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">                        
+                    </div>
+                    <div class="testimonial-card-body">
+                        <p class="testimonial-card-subtitle">With sleek designs and an easy to use online tool, B HIRED allowed me to quickly build and edit a professional resume with a personal touch, which ultimately helped me to get my dream job. I am now relocating to Barcelona to work for a top tier company. I strongly recommend B HIRED Resume to all job seekers out there.</p>                        <h6 class="testimonial-card-title">Emily Reb</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- end of container -->
+</section> <!-- end of testimonial section -->
+
+<!-- pricing section -->
+<section class="section" id="pricing">
+    <div class="container text-center">
+        <p class="section-subtitle">How Much We Charge ?</p>
+        <h6 class="section-title mb-6">Pricing</h6>
+        <!-- row -->
+        <div class="pricing-wrapper">
+            <div class="pricing-card">
+                <div class="pricing-card-header">
+                    <img class="pricing-card-icon" src="{% static 'imgs/scooter.svg' %}" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                </div>
+                <div class="pricing-card-body">
+                    <h6 class="pricing-card-title">Free</h6>
+                    <div class="pricing-card-list">
+                        <p>Free Professional</p>
+                        <p>Unlimited Modifications</p>
+                        <p>Delivery In Word/Pdf Format</p>
+                        <p>3 To 5 Working Days Delivery</p>
+                        <p><i class="ti-close"></i></p>
+                        <p><i class="ti-close"></i></p>
+                    </div>
+                </div>
+                <div class="pricing-card-footer">
+                    <span>$</span>
+                    <span>0.00/Month</span>
+                </div>
+                <a href="#" class="btn btn-primary mt-3 pricing-card-btn">Subscribe</a>
+            </div>
+            <div class="pricing-card">
+                <div class="pricing-card-header">
+                    <img class="pricing-card-icon" src="{% static 'imgs/shipped.svg' %}" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                </div>
+                <div class="pricing-card-body">
+                    <h6 class="pricing-card-title">Basic</h6>
+                    <div class="pricing-card-list">
+                        <p>Textual Cv</p>
+                        <p>Unlimited Modifications </p>
+                        <p>ATS Compliant</p>
+                        <p>Keywords Enabled</p>
+                        <p>2 To 3 Working Days Delivery</p>
+                        <p><i class="ti-close"></i></p>
+                    </div>
+                </div>
+                <div class="pricing-card-footer">
+                    <span>$</span>
+                    <span>9.99/Month</span>
+                </div>
+                <a href="#" class="btn btn-primary mt-3 pricing-card-btn">Subscribe</a>
+            </div>
+            <div class="pricing-card">
+                <div class="pricing-card-header">
+                    <img class="pricing-card-icon" src="{% static 'imgs/startup.svg' %}" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                </div>
+                <div class="pricing-card-body">
+                    <h6 class="pricing-card-title">Premium</h6>
+                    <div class="pricing-card-list">
+                        <p>Textual Cv</p>
+                        <p>Unlimited Modifications</p>
+                        <p>ATS Compliant</p>
+                        <p>Keywords Enabled</p>
+                        <p>2 To 3 Working Days Delivery</p>
+                        <p>Remove branding</p>
+                    </div>
+                </div>
+                <div class="pricing-card-footer">
+                    <span>$</span>
+                    <span>99.9/Month</span>
+                </div>
+                <a href="#" class="btn btn-primary mt-3 pricing-card-btn">Subscribe</a>
+            </div>
+
+        </div><!-- end of pricing wrapper -->
+    </div> <!-- end of container -->
+</section><!-- end of pricing section -->
+
+<hr>
+    <!-- contact section -->
+    <section class="section" id="contact">
+        <div class="container text-center">
+            <p class="section-subtitle">How can you communicate?</p>
+            <h6 class="section-title mb-5">Contact Us</h6>
+            <!-- contact form -->
+            <form action="" class="contact-form col-md-10 col-lg-8 m-auto">
+                <div class="form-row">
+                    <div class="form-group col-sm-6">
+                        <input type="text" size="50" class="form-control" placeholder="Your Name" required>                 
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <input type="email" class="form-control" placeholder="Enter Email"requried>                 
+                    </div>
+                    <div class="form-group col-sm-12">
+                        <textarea name="comment" id="comment" rows="6"   class="form-control" placeholder="Write Something"></textarea>
+                    </div>
+                    <div class="form-group col-sm-12 mt-3">
+                        <input type="submit" value="Send" class="btn btn-outline-primary rounded">                  
+                    </div>
+                </div>  
+            </form>
+            <!-- end of contact form -->
+        </div>
+        <!-- end of container -->
+    </section>
+    <!-- end of contact section -->    
+</body>
+</html>
+
+{% include 'footer.html' %}
+{% endblock %}
+
